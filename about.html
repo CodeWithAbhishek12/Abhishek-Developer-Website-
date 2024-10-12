@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - CodeWithAbhishek</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background: #007BFF; /* Header background color */
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between; /* Space between nav items */
+            align-items: center;
+            margin: 20px auto;
+            max-width: 800px; /* Centering with max width */
+            background: #0056b3; /* Blue background color of the nav */
+            padding: 10px; /* Padding for the nav */
+            border-radius: 5px; /* Rounded corners */
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
+        }
+
+        nav a {
+            color: white; /* White text color for nav links */
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+            padding: 10px; /* Add padding for better clickability */
+            transition: color 0.3s, background-color 0.3s; /* Transition effects */
+        }
+
+        nav a:hover {
+            background-color: #004494; /* Darker blue background on hover */
+            border-radius: 5px; /* Round the corners on hover */
+            color: #e7f0ff; /* Light color on hover */
+        }
+
+        .search-bar {
+            display: flex; /* Align items in flex */
+            align-items: center; /* Center vertically */
+        }
+
+        .search-bar input[type="text"] {
+            padding: 5px;
+            border: 1px solid #ccc; /* Border for input */
+            border-radius: 3px;
+            font-size: 16px;
+        }
+
+        .search-bar input[type="submit"] {
+            padding: 5px 10px;
+            border: none;
+            background-color: #007BFF;
+            color: white;
+            border-radius: 3px;
+            cursor: pointer;
+            margin-left: 5px; /* Space between input and button */
+        }
+
+        .search-bar input[type="submit"]:hover {
+            background-color: #003d80;
+        }
+
+        .nav-buttons {
+            margin-left: auto; /* Push the buttons to the right */
+        }
+
+        .nav-buttons a {
+            padding: 8px 15px;
+            margin: 0 5px;
+            background-color: #fff; /* White background for buttons */
+            color: #007BFF; /* Button text color */
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 16px;
+            border: 2px solid #007BFF; /* Border matching the nav color */
+            transition: background-color 0.3s, color 0.3s; /* Transition effects */
+        }
+
+        .nav-buttons a:hover {
+            background-color: #007BFF; /* Change button background on hover */
+            color: white; /* Change button text color on hover */
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #007BFF; /* Heading color */
+        }
+
+        .about-me {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .about-me img {
+            border-radius: 50%;
+            margin-right: 20px;
+            width: 100px; /* Adjust image size */
+            height: 100px; /* Adjust image size */
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            padding: 10px;
+            background: #007BFF; /* Footer background color */
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .skills {
+            margin-top: 20px;
+        }
+
+        .skills ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .skills li {
+            background: #e7f0ff;
+            margin: 5px 0;
+            padding: 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s, transform 0.3s; /* Added transition for smooth effect */
+        }
+
+        .skills li:hover {
+            background: #d0e7ff; /* Change the background color on hover */
+            transform: scale(1.05); /* Slightly scale the item on hover */
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>About Me</h1>
+        <nav>
+            <div>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="services.html">Services</a>
+            </div>
+            <!-- Search Bar on the Right -->
+            <div class="search-bar">
+                <form action="#" method="GET">
+                    <input type="text" name="search" placeholder="Search...">
+                    <input type="submit" value="Go">
+                </form>
+            </div>
+            <!-- Sign In and Login Buttons -->
+            <div class="nav-buttons">
+                <a href="signin.html">Sign In</a>
+                <a href="login.html">Login</a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="about-me">
+            <div>
+                <h2>My Name is Abhishek</h2>
+                <p>I am a passionate Web Developer with a love for creating dynamic and user-friendly web applications.</p>
+            </div>
+        </div>
+
+        <div class="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML & CSS</li>
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>Node.js</li>
+                <li>Web Design</li>
+                <li>Responsive Design</li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2024 CodeWithAbhishek. All rights reserved.
+    </footer>
+</body>
+
+</html>
